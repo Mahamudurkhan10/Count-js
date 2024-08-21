@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="">
+     <div>
+          <div class="card bg-blue-200 w-96 text-slate-900 mx-auto mt-[300px]   shadow-xl">
+
+               <div class="card-body">
+                    <h2 class="text-center text-3xl text-blue-500 font-bold "> Count </h2>
+
+                    <p id="num" class="text-center font-bold text-4xl"> 0 </p>
+
+                    <div class=" flex mt-5  justify-between">
+                         <button onclick="increment()" class="btn text-white btn-success"> Increment </button>
+                         <button onclick="reset()" class="btn text-white btn-error">reset </button>
+                         <button onclick="Descrement()" class="btn text-white btn-info"> Descrement </button>
+                    </div>
+                    <div>
+                         <form class="flex justify-around mt-5">
+                              <div class="flex">
+                                   <input id="value" type="" placeholder="Type here"
+                                        class="input bg-white input-bordered input-info w-full max-w-xs" />
+                              </div>
+                              <button onclick="add(event)" class="btn btn-success"> Add </button>
+                         </form>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <script src="Count.js"></script>
+</body>
+
+</html>
