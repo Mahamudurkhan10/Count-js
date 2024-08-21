@@ -1,7 +1,7 @@
 const Num = document.getElementById("num")
 
 
-
+localStorage.setItem("n",0    )
 let n = parseInt(localStorage.getItem("n"))
 Num.innerText = n;
 
@@ -34,11 +34,12 @@ function reset() {
 function add(event) {
      event.preventDefault()
      const inputValue = parseInt(document.getElementById('value').value)
-     console.log(inputValue);
+    
      if (!isNaN(inputValue)) {
           n += inputValue;
           Num.innerText = n;
           localStorage.setItem("n", n)
+      
      }
 
 }
