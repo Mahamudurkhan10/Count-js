@@ -15,18 +15,20 @@ function increment() {
 
 }
 function Descrement() {
-     if (n < 0) {
+     if (n > 0) {
           n--
           Num.innerText = n;
           localStorage.setItem("n", n)
      }
 
 
+
+
 }
 function reset() {
      n = 0;
      Num.innerText = n;
-     localStorage.setItem("n",n)
+     localStorage.setItem("n", n)
 
 }
 function add(event) {
