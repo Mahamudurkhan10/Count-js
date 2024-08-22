@@ -1,8 +1,8 @@
 const Num = document.getElementById("num")
 
 
-localStorage.setItem("n",0    )
-let n = parseInt(localStorage.getItem("n"))
+
+let n = (localStorage.getItem("n"))? parseInt(localStorage.getItem("n")):0;
 Num.innerText = n;
 
 
